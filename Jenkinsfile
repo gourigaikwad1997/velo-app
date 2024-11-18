@@ -10,36 +10,22 @@ pipeline {
 	stages {
 			stage ('one') {
 					steps {
-							 sh "echo 'Hello all' > qa.html"
+							 sh "echo 'Hello all' > dev.html"
 					}
 			}
 			
 			stage ('two') {
 					steps {
 					dir ('/data/pipeline/qa'){
-							 sh "echo 'Hello all' > uat.html"
+							 sh "echo 'Hello all' > qa.html"
 							 
 							 }
 					}
-			stage ('three') {
-					steps {
-					dir ('/data/pipeline/qa'){
-							 sh "echo 'Hello all' > master.html"
-							 
-							 }
-					}
-			stage ('four') {
-					steps {
-					dir ('/data/pipeline/qa'){
-							 sh "echo 'Hello all' > dev.html"
-							 
-							 }
-					}	
-			}	}	
+			}
+			
 	
 	}
 
 }
- 
  
 }
