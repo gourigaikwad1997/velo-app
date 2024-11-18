@@ -17,7 +17,7 @@ pipeline {
 			stage ('two') {
 					steps {
 					dir ('/data/pipeline/qa'){
-							 sh "echo 'Hello all' > qa.html"
+							 sh "this is 2024Q2"
 							 
 							 }
 					}
