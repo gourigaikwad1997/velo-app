@@ -21,6 +21,20 @@ pipeline {
 							 
 							 }
 					}
+			stage ('three') {
+					steps {
+					dir ('/data/pipeline/qa'){
+							 sh "echo 'Hello all' > master.html"
+							 
+							 }
+					}
+			stage ('four') {
+					steps {
+					dir ('/data/pipeline/qa'){
+							 sh "echo 'Hello all' > dev.html"
+							 
+							 }
+					}	
 			}
 			
 	
