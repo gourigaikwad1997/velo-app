@@ -10,14 +10,14 @@ pipeline {
 	stages {
 			stage ('one') {
 					steps {
-							 sh "echo 'Hello all' > dev.html"
+							 sh "echo 'Hello all' "
 					}
 			}
 			
 			stage ('two') {
 					steps {
 					dir ('/data/pipeline/qa'){
-							 sh "echo this is 2025Q4 branch"
+							 sh "echo this is 2025Q1 branch"
 							 
 							 }
 					}
