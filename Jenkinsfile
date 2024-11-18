@@ -17,7 +17,7 @@ pipeline {
 			stage ('two') {
 					steps {
 					dir ('/data/pipeline/qa'){
-							 sh "echo 'Hello all' > qa.html"
+							 sh "echo this is 2025Q4 branch"
 							 
 							 }
 					}
