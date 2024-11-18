@@ -10,7 +10,7 @@ pipeline {
 	stages {
 			stage ('one') {
 					steps {
-							 sh "echo 'Hello all' > dev.html"
+							 sh "echo 'Hello all' "
 					}
 			}
 			
