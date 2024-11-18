@@ -17,7 +17,7 @@ pipeline {
 			stage ('two') {
 					steps {
 					dir ('/data/pipeline/qa'){
-							 sh "this is 2024Q2"
+							 sh "echo this is 2024Q2 branch"
 							 
 							 }
 					}
